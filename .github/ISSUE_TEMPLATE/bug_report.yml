@@ -1,0 +1,40 @@
+name: Bug or incorrect guidance
+description: Report a reproducible recipe failure, broken instruction, or documentation error.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: "Do not include secrets, private source, or personal data. Report vulnerabilities through SECURITY.md."
+  - type: input
+    id: location
+    attributes:
+      label: Affected file or recipe
+      placeholder: references/recipes/06-modal.md
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Include the prompt or minimal code, steps, and relevant states.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Agent/model, commit, browser, viewport, framework, and dependency versions as relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence or sources
+      description: Redacted screenshots, check output, or primary-source links.

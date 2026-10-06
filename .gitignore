@@ -1,0 +1,30 @@
+# Local experiments are not part of the published skill.
+/lab/
+
+# Dependencies, build output, and browser artifacts.
+node_modules/
+dist/
+coverage/
+playwright-report/
+test-results/
+blob-report/
+*.log
+
+# Credentials and local configuration.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.npmrc
+.pi/
+.agents/
+.claude/
+.cc2/
+.cc2config
+
+# Editor and OS files.
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

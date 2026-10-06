@@ -1,0 +1,26 @@
+name: Improvement proposal
+description: Suggest a focused improvement to the skill or references.
+title: "[Proposal]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What task or observed failure does the current guidance miss?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: Explain scope, trade-offs, and why existing guidance does not cover it.
+    validations:
+      required: true
+  - type: textarea
+    id: verification
+    attributes:
+      label: Verification and sources
+      description: How would we check the improvement? Include primary sources and licensing details for imported material.
+    validations:
+      required: true
